@@ -49,6 +49,41 @@ Numpy的主要功能：
 安装与导入
     -skip
 
+### 为什么要用Numpy
+- 例1：已知若干家跨国公司的市值（美元），将其换算成RMB
+- 例2：已知购物车中每件商品的价格与商品件数，求总金额
+
+### ndarray-多维数组的对象
+创建ndarray：np.array(array_like)
+
+数组与列表的区别：
+    - 数组对象内的元素类型必须相同
+    - 数组大小不可改变】
+
+### ndarray-常用属性
+T - 数组的转置（对高维数组而言）
+
+size - 数组元素的个数
+
+ndim - 数组的维度
+
+shape - 数组的维度大小
+
+dtype - 数组元素的数据类型
+
+### ndarray-创建
+- array()      将列表转换为数组，可选择显式指定dtype
+- arange()     range的numpy版，支持浮点数
+- linspace()   类似arange()，第三个参数为数组长度
+- zeros()     根据指定形状和dtype创建全0数组
+- ones()      根据指定形状和dtype创建全1数组
+- empty()     根据指定形状和dtype创建空数组（随机值）
+- eye()       根据指定边长和dtype创建单位矩阵
+
+
+
+
+
 
 
 ## pandas模块介绍
