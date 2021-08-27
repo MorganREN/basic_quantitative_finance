@@ -140,7 +140,24 @@ copy()方法可以创建数组的深拷贝
 - Numpy中创建特殊值:np.nan   np.inf
 
 - 在数据分析中，nan常被用作表示数据缺失值
-    
+
+### Numpy-数学和统计方法
+- sum 求和
+- mean 求平均数
+- std 求标准差
+- var 求方差
+- min 求最小值
+- max 求最大值
+- argmin 求最小值索引
+- argmax 求最大值索引
+
+### Numpy-随机数生成
+- 随机数函数在np.random子包内：
+    - rand：给定形状产生随机数组（0-1之间的数）
+    - randint：给定形状产生随机整数
+    - choice：给定形状产生随机选择
+    - shuffle：与random.shuffle相同
+    - uniform：给定形状产生随机数组
 
 
 
