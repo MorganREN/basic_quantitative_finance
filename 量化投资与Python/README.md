@@ -125,6 +125,23 @@ copy()方法可以创建数组的深拷贝
 问题2：对一个二维数组，选出其第一列和第三列，组成新的二维数组
     - 答案：a[:,[1,3]]
 
+### Numpy-通用函数
+通用函数：能同时对数组中所有元素进行运算的函数
+
+常见通用函数：
+    - 一元函数：abs,sqrt,exp,log,ceil,floor,rint,trunc,modf,isnan,isinf,cos,sin,tan
+    - 二元函数：add,substract,multiply,divide,power,mod,maximum,minimum
+    
+### 补充-浮点数特殊值
+- nan(Not a Number):不等于任何浮点数(nan!=nan)
+ 
+- inf(Infinity):比任何浮点数都大
+
+- Numpy中创建特殊值:np.nan   np.inf
+
+- 在数据分析中，nan常被用作表示数据缺失值
+    
+
 
 
 
