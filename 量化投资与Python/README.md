@@ -162,12 +162,80 @@ copy()方法可以创建数组的深拷贝
 
 
 
-
-
-
-
-
 ## pandas模块介绍
+
+### pandas简介
+pandas 是一个强大的Python数据分析的工具包，是基于Numpy构建的
+
+pandas的主要功能：
+    - 具备对其功能的数据结构：DataFrame，Series
+    - 集成时间序列功能
+    - 提供丰富的数学运算和操作
+    - 灵活处理缺失数据
+
+
+### Series-一维数据对象
+Series是一种类似于一维数组的对象，由一组数据和一组与之相关的数据标签（索引）组成。
+
+创建方式：
+    - pd.Series([4,7,-5,3])
+    - pd.Series([4,7,-5,3], index=['a','b','c','d'])
+    - pd.Series({'a':-1, 'b':-2})
+    - pd.Series(0, index=['a','b','c','d'])
+    
+获取值数组和索引数组：values属性和index属性
+
+Series比较像列表（数组）和字典的集合体
+
+
+### Series-使用特性
+Series支持array的特性（下标）：
+    - 从ndarray创建Series：Series(arr)
+    - 与标量运算：sr*2 
+   - 两个Series运算：sr1 + sr2
+   - 索引：sr[0], sr[[1,2,4]]
+   - 切片：sr[0:2]
+   - 通用函数：np.abs(sr)
+   - 布尔值过滤：sr[sr>0]
+
+
+Series支持字典的属性：
+    - 从字典创建Series：Series(dic)
+    - in运算：'a' in sr
+    - 键索引：sr['a'], sr[['a','b','c']]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
