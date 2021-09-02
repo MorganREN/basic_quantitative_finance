@@ -216,6 +216,32 @@ Series支持字典的属性：
 解决方法：loc属性（将索引解释为标签）和iloc属性（将索引解释为下标）
 
 
+### Series-数据对齐
+例：
+    - sr1 = pd.Series([12,23,34], index=['c','a','d'])
+    - sr2 = pd.Series([11,20,10], index=['d','c','a'])
+    - sr1 + sr2：
+    a    33
+    c    32
+    d    45
+    
+pandas在进行两个Series对象的运算时，会按索引（标签）进行对齐然后进行计算
+
+
+例：
+    - sr1 = pd.Series([12,23,34], index=['c','a','d'])
+    - sr2 = pd.Series([11,20,10], index=['b','c','a'])
+    - sr1 + sr2：
+    a    33.0
+    b     NaN
+    c    32.0
+    d     NaN
+    
+    如何使结果在索引'b'处的值为11，在索引'd'处的值为34？
+        - 灵活的算术方法：add, sub, div, mul
+        - sr1.add(sr2, fill_value=0)
+
+
 
 
 
