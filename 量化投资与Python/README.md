@@ -203,6 +203,17 @@ Series支持字典的属性：
     - 从字典创建Series：Series(dic)
     - in运算：'a' in sr
     - 键索引：sr['a'], sr[['a','b','c']]
+    
+### Series-整数索引
+整数索引的pandas对象往往会使新手抓狂
+
+例：
+    - sr = pd.Series(np.arange(4.))
+    - sr[-1]
+    
+如果索引是整数类型，则根据整数进行下标获取值时总是面向标签的
+
+解决方法：loc属性（将索引解释为标签）和iloc属性（将索引解释为下标）
 
 
 
