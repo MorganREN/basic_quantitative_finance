@@ -268,7 +268,22 @@ pandas在进行两个Series对象的运算时，会按索引（标签）进行�
 - values      获取值数组
 - describe()   获取快速统计
 
+### DataFrame-索引和切片
+- DataFrame是一个二维数据类型，所以有行索引和列索引
+- DataFrame同样可以通过标签和位置两种方法进行索引和切片
+- loc属性和iloc属性：
+    - 使用方法：逗号隔开，前面是行索引，后面是列索引
+    - 行/列索引部分可以是常规索引、切片、布尔值索引、花式索引任意搭配
 
+
+### DataFrame-数据对齐与缺失数据
+- DataFrame对象在运算时，同样会进行数据对齐，其行索引和列索引分别对齐
+
+- DataFrame处理缺失数据的相关方法
+    - dropna(axis=0, where='any',...)
+    - fillna()
+    - isnull()
+    - notnull()
 
 
 
