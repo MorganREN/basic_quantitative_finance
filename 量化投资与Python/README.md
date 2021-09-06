@@ -331,7 +331,7 @@ datetime对象作为索引时是存储在DatatimeIndex对象中的
     - read_csv   默认分隔符为逗号
     - read_table  默认分隔符为制表符
     
-### pandas-文件处理
+### pandas-文件处理（一）
 - read_csv, read_table函数的主要参数：
     - sep         指定分隔符，可用正则表达式如“\s+”
     - header=None    指定文件无列名
@@ -341,25 +341,75 @@ datetime对象作为索引时是存储在DatatimeIndex对象中的
     - na_values     指定某些字符串表示缺失值
     - parse_dates    指定某些列是否被解析为日期，类型为布尔值或列表
 
+### pandas-文件处理（二）
+写入到csv文件：to_csv函数
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- 写入文件函数的主要参数：
+    - sep        指定文件分隔符
+    - na_rep      指定缺失值转换的字符串，默认为空字符串
+    - header=False  不输出列名一行
+    - index=False  不输出索引一列
+    - cols       指定输出的列，传入列表
+    
+- pandas支持的其他文件类型：
+    - json, XML, HTML, 数据库, pickle, excel...
 
 
 
 ## Matplotlib模块介绍
+
+### Matplotlib-介绍
+Matplotlib是一个强大的Python绘图和数据可视化的工具包
+
+引用方法：import matplotlib.pyploy as plt
+
+绘图函数：plt.plot()
+
+显示图像：plt.show()
+
+
+### Matplotlib-plot函数
+- plot函数：绘制折线图
+    - 线型：linestyle(-, -., --, ...)
+    - 点型：marker(v, ^, s, *, H, +, x, D, o, ...)
+    - 颜色：color(b, g, r, y, k, w, ...)
+    
+- plot函数绘制多条曲线
+
+- pandas包对plot的支持
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
