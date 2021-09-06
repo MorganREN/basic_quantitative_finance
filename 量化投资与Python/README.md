@@ -322,8 +322,24 @@ datetime对象作为索引时是存储在DatatimeIndex对象中的
     - 传入‘年’或‘年月’作为切片方式
     - 传入日期范围作为切片方式
     - 丰富的函数支持: resample(), truncate(), ...
+    
+### 文件读取
 
+数据文件常用格式：csv（以某间隔符分割数据）
 
+- pandas读取文件：从文件名，URL，文件对象中加载数据
+    - read_csv   默认分隔符为逗号
+    - read_table  默认分隔符为制表符
+    
+### pandas-文件处理
+- read_csv, read_table函数的主要参数：
+    - sep         指定分隔符，可用正则表达式如“\s+”
+    - header=None    指定文件无列名
+    - name(s)      指定列名
+    - index_col     指定某列作为索引
+    - skip_row      指定跳过某些行
+    - na_values     指定某些字符串表示缺失值
+    - parse_dates    指定某些列是否被解析为日期，类型为布尔值或列表
 
 
 
