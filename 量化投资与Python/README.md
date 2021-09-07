@@ -409,7 +409,15 @@ DataFrame绘制出多条线
 - 使用Matplotlib模块在一个窗口中绘制数学函数y=x， y=x^2, y=3x^3+5x^2+2x+1的图象，
 - 是用不同颜色的线加以区别，并使用图例说明各个线代表什么函数。
 
+### Matplotlib-画布和子图
+- 画布：figure
+    - fig = plt.figure()
 
+- 图：subplot
+    - ax1 = fig.add_subplot(2,2,1)
+    
+- 调节子图间距：
+    - subplots_adjust(left, bottom, right, top, wspace, hspace)
 
 
 
