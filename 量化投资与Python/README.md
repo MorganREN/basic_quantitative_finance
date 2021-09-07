@@ -420,12 +420,31 @@ DataFrame绘制出多条线
     - subplots_adjust(left, bottom, right, top, wspace, hspace)
 
 
-### Matplotlib-柱状图和饼图
+### Matplotlib-支持的图类型
 
+- plt.plot(x,y,fmt,...)          坐标图
 
+- plt.boxplot(data,notch,position)  箱型图
 
+- plt.bar(left,height,width,bottom) 条形图
 
+- plt.barh(width,bottom,left,height)横向条形图
 
+- plt.polar(theta,r)            极坐标图
+
+- plt.pie(data,explode)          饼图
+
+- plt.psd(x,NFFT=256,pad_to,Fs)    功率谱密度图
+
+- plt.specgram(x,NFFT=256,pad_to,F) 谱图
+
+- plt.cohere(x,y,NFFT=256,Fs)      X-Y相关性函数
+
+- plt.scatter(x,y)             散点图
+
+- plt.step(x,y,where)           步阶图
+
+- plt.hist(x,bins,normed)        直方图
 
 
 
