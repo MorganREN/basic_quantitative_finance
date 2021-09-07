@@ -397,8 +397,17 @@ Matplotlib是一个强大的Python绘图和数据可视化的工具包
 
 
 
+### Matplotlib-与pandas库
 
+pandas库可以直接使用plot()方法进行绘制
 
+Series绘制出一条线
+
+DataFrame绘制出多条线
+
+### Matplotlib-绘制数学函数图象
+- 使用Matplotlib模块在一个窗口中绘制数学函数y=x， y=x^2, y=3x^3+5x^2+2x+1的图象，
+- 是用不同颜色的线加以区别，并使用图例说明各个线代表什么函数。
 
 
 
