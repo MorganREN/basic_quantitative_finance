@@ -378,6 +378,22 @@ Matplotlib是一个强大的Python绘图和数据可视化的工具包
 
 - pandas包对plot的支持
 
+### Matplotlib-图像标注
+- 设置图像标题：plt.title()
+
+- 设置x轴名称：plt.xlabel()
+
+- 设置y轴名称：plt.ylabel()
+
+- 设置x轴范围：plt.xlim()
+
+- 设置y轴范围：plt.ylim()
+
+- 设置x轴刻度：plt.xticks()
+
+- 设置y轴刻度：plt.yticks()
+
+- 设置曲线图例：plt.legend()
 
 
 
