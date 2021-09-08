@@ -446,9 +446,11 @@ DataFrame绘制出多条线
 
 - plt.hist(x,bins,normed)        直方图
 
+### Matplotlib-绘制K线图
 
+mpl_finance包中有许多绘制金融相关图的函数接口
 
-
+绘制K线图：mpl_finance.candlestick_ochl函数
 
 
 
